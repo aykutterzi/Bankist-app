@@ -1,2 +1,2 @@
 # Banking-app
-Simple banking app where you can log deposits, withdrawals and interest.
+Simple banking app where users can log deposits, withdrawals and interest.
