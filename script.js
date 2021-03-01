@@ -9,7 +9,7 @@ const account1 = {
 };
 
 const account2 = {
-  owner: "Nikola Tesl ",
+  owner: "Nikola Tesla",
   movements: [5000, 3400, -150, -790, -3210, -1000, 8500, -30],
   interestRate: 1.5,
   pin: 2222,
@@ -154,6 +154,28 @@ btnLogin.addEventListener("click", function (e) {
     // Clear input fields
     inputLoginUsername.value = inputLoginPin.value = "";
     inputLoginPin.blur();
+
+    // Update UI
+    updateUI(currentAccount);
+  }
+});
+
+btnTransfer.addEventListener("click", function (e) {
+  e.preventDefault();
+  const amount = Number(inputTransferAmount.value);
+  const receiverAcc = accounts.find(
+    (acc) => acc.username === inputTransferTo.value
+  );
+  inputTransferAmount.value = inputTransferTo.value = "";
+  if (
+    amount > 0 &&
+    receiverAcc &&
+    currentAccount.balance >= amount &&
+    currentAccount.username !== receiverAcc?.username
+  ) {
+    // Making the transfer
+    currentAccount.movements.push(-amount);
+    receiverAcc.movements.push(amount);
 
     // Update UI
     updateUI(currentAccount);
