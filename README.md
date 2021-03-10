@@ -4,9 +4,9 @@ Bankist helps you keep track of your expenses, analyze your movements and foreca
 For this project, there are 4 predetermined users.
 In order to transfer money between users, use their username.
 
-name: "Albert Eintein"
-username: ae
-pin: 1111
+name: "Albert Eintein"\
+username: ae\
+pin: 1111\
 
 name: "Isaac Newton"
 username: in
