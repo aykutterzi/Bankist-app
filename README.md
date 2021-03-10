@@ -1,3 +1,3 @@
 # Banking-app
-Simple banking app where users can log deposits, withdrawals and interest.
+Bankist helps you keep track of your expenses, analyze your movements and forecast your savings.
 
