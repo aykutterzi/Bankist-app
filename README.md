@@ -6,16 +6,16 @@ In order to transfer money between users, use their username.
 
 name: "Albert Eintein"\
 username: ae\
-pin: 1111\
+pin: 1111
 
-name: "Isaac Newton"
-username: in
+name: "Isaac Newton"\
+username: in\
 pin: 2222
 
-name: "Nikola Tesla"
-username: nt
+name: "Nikola Tesla"\
+username: nt\
 pin: 3333
 
-name: "Stephen Hawking"
-username: sp
+name: "Stephen Hawking"\
+username: sp\
 pin: 4444
